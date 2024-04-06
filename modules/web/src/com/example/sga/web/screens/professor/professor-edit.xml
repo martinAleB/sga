@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://professorEdit.caption"
+        focusComponent="form"
+        messagesPack="com.example.sga.web.screens.professor">
+    <data>
+        <instance id="professorDc"
+                  class="com.example.sga.entity.Professor">
+            <view extends="_local">
+                <property name="subjects" view="_local"/>
+            </view>
+            <loader/>
+            <collection id="subjectsDc" property="subjects"/>
+        </instance>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="professorDc">
+            <column width="350px">
+                <textField id="codeField" property="code"/>
+                <textField id="firstNameField" property="firstName"/>
+                <textField id="lastNameField" property="lastName"/>
+            </column>
+        </form>
+        <groupBox id="subjectsBox" caption="msg://com.example.sga.entity/Professor.subjects">
+            <table id="subjectsTable" dataContainer="subjectsDc" width="100%" height="200px">
+                <columns>
+                    <column id="code"/>
+                    <column id="name"/>
+                </columns>
+            </table>
+        </groupBox>
+        <hbox id="editActions" spacing="true">
+            <button id="commitAndCloseBtn" action="windowCommitAndClose"/>
+            <button id="closeBtn" action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

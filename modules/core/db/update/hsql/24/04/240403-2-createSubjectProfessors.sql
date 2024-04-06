@@ -1,0 +1,2 @@
+alter table SGA_SUBJECT_professors add constraint FK_SUBPRO_ON_SUBJECT foreign key (subject_ID) references SGA_SUBJECT(ID);
+alter table SGA_SUBJECT_professors add constraint FK_SUBPRO_ON_PROFESSOR foreign key (professors_ID) references SGA_PROFESSOR(ID);

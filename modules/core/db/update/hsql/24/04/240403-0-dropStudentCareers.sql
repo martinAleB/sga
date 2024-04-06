@@ -1,0 +1,1 @@
+alter table SGA_STUDENT_CAREERS rename to SGA_STUDENT_CAREERS__U32859 ;

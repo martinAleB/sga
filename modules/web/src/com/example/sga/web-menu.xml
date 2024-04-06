@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <menu id="application-sga" insertBefore="administration" caption="mainMsg://menu_config.application-sga">
+        <item screen="sga_Career.browse" caption="mainMsg://menu_config.sga_Career.browse"/>
+        <item screen="sga_Professor.browse" caption="mainMsg://menu_config.sga_Professor.browse"/>
+        <item screen="sga_Subject.browse" caption="mainMsg://menu_config.sga_Subject.browse"/>
+        <item screen="sga_Student.browse" caption="mainMsg://menu_config.sga_Student.browse"/>
+        <item screen="sga_StudentSubjectCourse.browse" caption="mainMsg://menu_config.sga_StudentSubjectCourse.browse"/>
+    </menu>
+</menu-config>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        xmlns:c="http://schemas.haulmont.com/cuba/screen/jpql_condition.xsd"
+        caption="msg://studentSubjectCourseBrowse.caption"
+        focusComponent="studentSubjectCoursesTable"
+        messagesPack="com.example.sga.web.screens.studentsubjectcourse">
+    <data readOnly="true">
+        <collection id="studentSubjectCoursesDc"
+                    class="com.example.sga.entity.StudentSubjectCourse">
+            <view extends="_local">
+                <property name="subject" view="_local"/>
+                <property name="student" view="_local"/>
+            </view>
+            <loader id="studentSubjectCoursesDl">
+                <query>
+                    <![CDATA[select e from sga_StudentSubjectCourse e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="studentSubjectCoursesTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="studentSubjectCoursesTable"
+                dataLoader="studentSubjectCoursesDl">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="studentSubjectCoursesTable"
+                    width="100%"
+                    dataContainer="studentSubjectCoursesDc">
+            <actions>
+                <action id="create" type="create"/>
+                <action id="edit" type="edit"/>
+                <action id="remove" type="remove"/>
+            </actions>
+            <columns>
+                <column id="subject" collapsed="true"/>
+                <column id="student" collapsed="true"/>
+                <column id="subject.code"/>
+                <column id="student.collegeNumber"/>
+                <column id="courseNote"/>
+                <column id="examFinalNote"/>
+                <column id="note"/>
+            </columns>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn" action="studentSubjectCoursesTable.create"/>
+                <button id="editBtn" action="studentSubjectCoursesTable.edit"/>
+                <button id="removeBtn" action="studentSubjectCoursesTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+        <hbox id="lookupActions" spacing="true" visible="false">
+            <button action="lookupSelectAction"/>
+            <button action="lookupCancelAction"/>
+        </hbox>
+    </layout>
+</window>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://subjectEdit.caption"
+        focusComponent="form"
+        messagesPack="com.example.sga.web.screens.subject">
+    <data>
+        <instance id="subjectDc"
+                  class="com.example.sga.entity.Subject">
+            <view extends="_local">
+                <property name="careers" view="_local"/>
+                <property name="professors" view="_local"/>
+                <property name="studentSubjectCourses" view="_local"/>
+            </view>
+            <loader/>
+            <collection id="careersDc" property="careers"/>
+            <collection id="professorsDc" property="professors"/>
+            <collection id="studentSubjectCoursesDc" property="studentSubjectCourses"/>
+        </instance>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="subjectDc">
+            <column width="350px">
+                <textField id="codeField" property="code"/>
+                <textField id="nameField" property="name"/>
+            </column>
+        </form>
+        <groupBox id="careersBox" caption="msg://com.example.sga.entity/Subject.careers">
+            <table id="careersTable" dataContainer="careersDc" width="100%" height="200px">
+                <columns>
+                    <column id="code"/>
+                    <column id="name"/>
+                </columns>
+            </table>
+        </groupBox>
+        <groupBox id="professorsBox" caption="msg://com.example.sga.entity/Subject.professors">
+            <table id="professorsTable" dataContainer="professorsDc" width="100%" height="200px">
+                <actions>
+                    <action id="add" type="add"/>
+                    <action id="exclude" type="exclude"/>
+                </actions>
+                <columns>
+                    <column id="code"/>
+                    <column id="firstName"/>
+                    <column id="lastName"/>
+                </columns>
+                <buttonsPanel>
+                    <button action="professorsTable.add"/>
+                    <button action="professorsTable.exclude"/>
+                </buttonsPanel>
+            </table>
+        </groupBox>
+        <groupBox id="studentSubjectCoursesBox" caption="msg://com.example.sga.entity/Subject.studentSubjectCourses">
+            <table id="studentSubjectCoursesTable" dataContainer="studentSubjectCoursesDc" width="100%" height="200px">
+                <actions>
+                    <action id="create" type="create"/>
+                    <action id="edit" type="edit"/>
+                    <action id="remove" type="remove"/>
+                </actions>
+                <columns>
+                    <column id="courseNote"/>
+                    <column id="note"/>
+                    <column id="examFinalNote"/>
+                </columns>
+                <buttonsPanel>
+                    <button action="studentSubjectCoursesTable.create"/>
+                    <button action="studentSubjectCoursesTable.edit"/>
+                    <button action="studentSubjectCoursesTable.remove"/>
+                </buttonsPanel>
+            </table>
+        </groupBox>
+        <hbox id="editActions" spacing="true">
+            <button id="commitAndCloseBtn" action="windowCommitAndClose"/>
+            <button id="closeBtn" action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

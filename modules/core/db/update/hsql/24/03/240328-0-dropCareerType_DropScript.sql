@@ -1,0 +1,1 @@
+drop table SGA_CAREER_TYPE__U67009 if exists cascade ;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="sga" transaction-type="RESOURCE_LOCAL">
+
+        <class>com.example.sga.entity.Student</class>
+        <class>com.example.sga.entity.Career</class>
+        <class>com.example.sga.entity.Subject</class>
+        <class>com.example.sga.entity.Professor</class>
+        <class>com.example.sga.entity.StudentSubjectCourse</class>
+    </persistence-unit>
+</persistence>

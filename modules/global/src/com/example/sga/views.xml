@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<views xmlns="http://schemas.haulmont.com/cuba/view.xsd">
+    <view class="com.example.sga.entity.StudentSubjectCourse"
+          name="student-subject-course-view"
+          extends="_local">
+        <property name="subject" view="_local"/>
+        <property name="student" view="_local"/>
+    </view>
+</views>

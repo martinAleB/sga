@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://studentEdit.caption"
+        focusComponent="form"
+        messagesPack="com.example.sga.web.screens.student">
+    <data>
+        <instance id="studentDc"
+                  class="com.example.sga.entity.Student">
+            <view extends="_local">
+                <property name="careers" view="_local"/>
+                <property name="studentSubjectCourses" view="student-subject-course-view"/>
+            </view>
+            <loader/>
+            <collection id="careersDc" property="careers"/>
+            <collection id="studentSubjectCoursesDc" property="studentSubjectCourses"/>
+        </instance>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="studentDc">
+            <column width="350px">
+                <textField id="collegeNumberField" property="collegeNumber"/>
+                <textField id="firstNameField" property="firstName"/>
+                <textField id="lastNameField" property="lastName"/>
+            </column>
+        </form>
+        <groupBox id="careersBox" caption="msg://com.example.sga.entity/Student.careers">
+            <table id="careersTable" dataContainer="careersDc" width="100%" height="200px">
+                <actions>
+                    <action id="add" type="add"/>
+                    <action id="exclude" type="exclude"/>
+                </actions>
+                <columns>
+                    <column id="code"/>
+                    <column id="name"/>
+                </columns>
+                <buttonsPanel>
+                    <button action="careersTable.add"/>
+                    <button action="careersTable.exclude"/>
+                </buttonsPanel>
+            </table>
+        </groupBox>
+        <groupBox id="studentSubjectCoursesBox" caption="msg://com.example.sga.entity/Student.studentSubjectCourses">
+            <table id="studentSubjectCoursesTable" dataContainer="studentSubjectCoursesDc" width="100%" height="200px">
+                <actions>
+                    <action id="create" type="create"/>
+                    <action id="edit" type="edit"/>
+                    <action id="remove" type="remove"/>
+                </actions>
+                <columns>
+                    <column id="subject.code"/>
+                    <column id="courseNote"/>
+                    <column id="examFinalNote"/>
+                    <column id="note"/>
+                </columns>
+                <buttonsPanel>
+                    <button action="studentSubjectCoursesTable.create"/>
+                    <button action="studentSubjectCoursesTable.edit"/>
+                    <button action="studentSubjectCoursesTable.remove"/>
+                </buttonsPanel>
+            </table>
+        </groupBox>
+        <hbox id="editActions" spacing="true">
+            <button id="commitAndCloseBtn" action="windowCommitAndClose"/>
+            <button id="closeBtn" action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

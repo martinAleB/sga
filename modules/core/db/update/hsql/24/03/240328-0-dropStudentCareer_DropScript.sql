@@ -1,0 +1,1 @@
+drop table SGA_STUDENT_CAREER__U92497 if exists cascade ;

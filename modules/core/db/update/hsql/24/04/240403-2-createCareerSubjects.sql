@@ -1,0 +1,2 @@
+alter table SGA_CAREER_subjects add constraint FK_CARSUB_ON_CAREER foreign key (career_ID) references SGA_CAREER(ID);
+alter table SGA_CAREER_subjects add constraint FK_CARSUB_ON_SUBJECT foreign key (subjects_ID) references SGA_SUBJECT(ID);

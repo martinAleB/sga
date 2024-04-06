@@ -1,0 +1,2 @@
+alter table SGA_STUDENT_careers add constraint FK_STUCAR_ON_STUDENT foreign key (student_ID) references SGA_STUDENT(ID);
+alter table SGA_STUDENT_careers add constraint FK_STUCAR_ON_CAREER foreign key (careers_ID) references SGA_CAREER(ID);

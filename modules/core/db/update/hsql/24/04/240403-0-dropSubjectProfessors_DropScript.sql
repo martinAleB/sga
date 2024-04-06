@@ -1,0 +1,1 @@
+drop table SGA_SUBJECT_PROFESSORS__U31073 if exists cascade ;
