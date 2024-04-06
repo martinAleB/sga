@@ -103,9 +103,9 @@ create table SGA_STUDENT_SUBJECT_COURSE (
     --
     student_id varchar(36),
     subject_id varchar(36),
-    course_note double precision,
-    note double precision,
-    exam_final_note double precision,
+    course_grade double precision,
+    grade double precision,
+    exam_final_grade double precision,
     --
     primary key (ID)
 )^

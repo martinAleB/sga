@@ -39,10 +39,11 @@
                 <column id="subject" collapsed="true"/>
                 <column id="student" collapsed="true"/>
                 <column id="subject.code"/>
+                <column id="subject.name"/>
                 <column id="student.collegeNumber"/>
-                <column id="courseNote"/>
-                <column id="examFinalNote"/>
-                <column id="note"/>
+                <column id="courseGrade"/>
+                <column id="examFinalGrade"/>
+                <column id="grade"/>
             </columns>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"

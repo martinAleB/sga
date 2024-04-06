@@ -35,36 +35,36 @@ public class StudentSubjectCourse extends StandardEntity {
         this.subject = subject;
     }
 
-    @Column(name = "course_note")
-    private Double courseNote;
+    @Column(name = "course_grade")
+    private Double courseGrade;
 
-    @Column(name = "note")
-    private Double note;
+    @Column(name = "grade")
+    private Double grade;
 
-    @Column(name = "exam_final_note")
-    private Double examFinalNote;
+    @Column(name = "exam_final_grade")
+    private Double examFinalGrade;
 
-    public Double getNote() {
-        return note;
+    public Double getGrade() {
+        return grade;
     }
 
-    public void setNote(Double note) {
-        this.note = note;
+    public void setGrade(Double note) {
+        this.grade = note;
     }
 
-    public Double getExamFinalNote() {
-        return examFinalNote;
+    public Double getExamFinalGrade() {
+        return examFinalGrade;
     }
 
-    public void setExamFinalNote(Double examFinalNote) {
-        this.examFinalNote = examFinalNote;
+    public void setExamFinalGrade(Double examFinalGrade) {
+        this.examFinalGrade = examFinalGrade;
     }
 
-    public Double getCourseNote() {
-        return courseNote;
+    public Double getCourseGrade() {
+        return courseGrade;
     }
 
-    public void setCourseNote(Double courseNote) {
-        this.courseNote = courseNote;
+    public void setCourseGrade(Double courseGrade) {
+        this.courseGrade = courseGrade;
     }
 }

@@ -20,9 +20,9 @@
             <column width="350px">
                 <pickerField id="subjectField" property="subject" captionProperty="code"/>
                 <pickerField id="studentField" property="student" captionProperty="collegeNumber"/>
-                <textField id="courseNoteField" property="courseNote"/>
-                <textField id="examFinalNoteField" property="examFinalNote"/>
-                <textField id="noteField" property="note"/>
+                <textField id="courseGradeField" property="courseGrade"/>
+                <textField id="examFinalGradeField" property="examFinalGrade"/>
+                <textField id="gradeField" property="grade"/>
             </column>
         </form>
         <hbox id="editActions" spacing="true">

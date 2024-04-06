@@ -50,9 +50,10 @@
                 </actions>
                 <columns>
                     <column id="subject.code"/>
-                    <column id="courseNote"/>
-                    <column id="examFinalNote"/>
-                    <column id="note"/>
+                    <column id="subject.name"/>
+                    <column id="courseGrade"/>
+                    <column id="examFinalGrade"/>
+                    <column id="grade"/>
                 </columns>
                 <buttonsPanel>
                     <button action="studentSubjectCoursesTable.create"/>
