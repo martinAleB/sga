@@ -44,6 +44,7 @@
                 <column id="courseGrade"/>
                 <column id="examFinalGrade"/>
                 <column id="grade"/>
+                <column id="consolidated"/>
             </columns>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"

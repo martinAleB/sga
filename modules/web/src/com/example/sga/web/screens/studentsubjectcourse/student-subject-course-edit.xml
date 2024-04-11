@@ -23,6 +23,7 @@
                 <textField id="courseGradeField" property="courseGrade"/>
                 <textField id="examFinalGradeField" property="examFinalGrade"/>
                 <textField id="gradeField" property="grade"/>
+                <checkBox id="closedField" property="consolidated"/>
             </column>
         </form>
         <hbox id="editActions" spacing="true">

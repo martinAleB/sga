@@ -44,6 +44,17 @@ public class StudentSubjectCourse extends StandardEntity {
     @Column(name = "exam_final_grade")
     private Double examFinalGrade;
 
+    @Column(name = "consolidated", nullable = false)
+    private Boolean consolidated;
+
+    public Boolean getConsolidated() {
+        return consolidated;
+    }
+
+    public void setConsolidated(Boolean consolidated) {
+        this.consolidated = consolidated;
+    }
+
     public Double getGrade() {
         return grade;
     }

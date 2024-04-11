@@ -106,6 +106,7 @@ create table SGA_STUDENT_SUBJECT_COURSE (
     course_grade double precision,
     grade double precision,
     exam_final_grade double precision,
+    consolidated boolean not null,
     --
     primary key (ID)
 )^

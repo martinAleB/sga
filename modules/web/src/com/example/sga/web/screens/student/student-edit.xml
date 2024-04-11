@@ -45,7 +45,7 @@
             <table id="studentSubjectCoursesTable" dataContainer="studentSubjectCoursesDc" width="100%" height="200px">
                 <actions>
                     <action id="create" type="create"/>
-                    <action id="edit" type="edit"/>
+                    <action id="edit" type="edit" enable="false"/>
                     <action id="remove" type="remove"/>
                 </actions>
                 <columns>
@@ -54,6 +54,7 @@
                     <column id="courseGrade"/>
                     <column id="examFinalGrade"/>
                     <column id="grade"/>
+                    <column id="consolidated"/>
                 </columns>
                 <buttonsPanel>
                     <button action="studentSubjectCoursesTable.create"/>
