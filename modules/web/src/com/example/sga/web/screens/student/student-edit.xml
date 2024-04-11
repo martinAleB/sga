@@ -20,20 +20,20 @@
     <layout expand="editActions" spacing="true">
         <form id="form" dataContainer="studentDc">
             <column width="350px">
-                <textField id="collegeNumberField" property="collegeNumber"/>
-                <textField id="firstNameField" property="firstName"/>
-                <textField id="lastNameField" property="lastName"/>
+                <textField id="collegeNumberField" property="collegeNumber" caption="msg://collegeNumber.caption"/>
+                <textField id="firstNameField" property="firstName" caption="msg://firstName.caption"/>
+                <textField id="lastNameField" property="lastName" caption="msg://lastName.caption"/>
             </column>
         </form>
-        <groupBox id="careersBox" caption="msg://com.example.sga.entity/Student.careers">
+        <groupBox id="careersBox" caption="msg://menu_config.sga_Career.browse">
             <table id="careersTable" dataContainer="careersDc" width="100%" height="200px">
                 <actions>
                     <action id="add" type="add"/>
                     <action id="exclude" type="exclude"/>
                 </actions>
                 <columns>
-                    <column id="code"/>
-                    <column id="name"/>
+                    <column id="code" caption="msg://code.caption"/>
+                    <column id="name" caption="msg://name.caption"/>
                 </columns>
                 <buttonsPanel>
                     <button action="careersTable.add"/>
@@ -41,7 +41,7 @@
                 </buttonsPanel>
             </table>
         </groupBox>
-        <groupBox id="studentSubjectCoursesBox" caption="msg://com.example.sga.entity/Student.studentSubjectCourses">
+        <groupBox id="studentSubjectCoursesBox" caption="msg://menu_config.sga_StudentSubjectCourse.browse">
             <table id="studentSubjectCoursesTable" dataContainer="studentSubjectCoursesDc" width="100%" height="200px">
                 <actions>
                     <action id="create" type="create"/>

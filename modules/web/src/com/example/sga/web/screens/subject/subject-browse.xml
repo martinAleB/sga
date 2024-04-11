@@ -33,8 +33,8 @@
                 <action id="remove" type="remove"/>
             </actions>
             <columns>
-                <column id="code"/>
-                <column id="name"/>
+                <column id="code" caption="msg://code.caption"/>
+                <column id="name" caption="msg://name.caption"/>
             </columns>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"

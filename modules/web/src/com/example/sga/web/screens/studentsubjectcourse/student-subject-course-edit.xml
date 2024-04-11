@@ -18,12 +18,12 @@
     <layout expand="editActions" spacing="true">
         <form id="form" dataContainer="studentSubjectCourseDc">
             <column width="350px">
-                <pickerField id="subjectField" property="subject" captionProperty="code"/>
-                <pickerField id="studentField" property="student" captionProperty="collegeNumber"/>
-                <textField id="courseGradeField" property="courseGrade"/>
-                <textField id="examFinalGradeField" property="examFinalGrade"/>
-                <textField id="gradeField" property="grade"/>
-                <checkBox id="closedField" property="consolidated"/>
+                <pickerField id="subjectField" property="subject" captionProperty="code" caption="msg://subjectCode.caption"/>
+                <pickerField id="studentField" property="student" captionProperty="collegeNumber" caption="msg://studentCollegeNumber.caption"/>
+                <textField id="courseGradeField" property="courseGrade" caption="msg://courseGrade.caption"/>
+                <textField id="examFinalGradeField" property="examFinalGrade" caption="msg://examFinalGrade.caption"/>
+                <textField id="gradeField" property="grade" caption="msg://grade.caption"/>
+                <checkBox id="consolidatedField" property="consolidated" caption="msg://consolidated.caption"/>
             </column>
         </form>
         <hbox id="editActions" spacing="true">

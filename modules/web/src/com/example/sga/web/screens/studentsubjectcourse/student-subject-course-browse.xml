@@ -38,13 +38,13 @@
             <columns>
                 <column id="subject" collapsed="true"/>
                 <column id="student" collapsed="true"/>
-                <column id="subject.code"/>
-                <column id="subject.name"/>
-                <column id="student.collegeNumber"/>
-                <column id="courseGrade"/>
-                <column id="examFinalGrade"/>
-                <column id="grade"/>
-                <column id="consolidated"/>
+                <column id="subject.code" caption="msg://subjectCode.caption"/>
+                <column id="subject.name" caption="msg://subjectName.caption"/>
+                <column id="student.collegeNumber" caption="msg://studentCollegeNumber.caption"/>
+                <column id="courseGrade" caption="msg://courseGrade.caption"/>
+                <column id="examFinalGrade" caption="msg://examFinalGrade.caption"/>
+                <column id="grade" caption="msg://grade.caption"/>
+                <column id="consolidated" caption="msg://consolidated.caption"/>
             </columns>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"

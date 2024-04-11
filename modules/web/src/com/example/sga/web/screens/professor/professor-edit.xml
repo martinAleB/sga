@@ -18,9 +18,9 @@
     <layout expand="editActions" spacing="true">
         <form id="form" dataContainer="professorDc">
             <column width="350px">
-                <textField id="codeField" property="code"/>
-                <textField id="firstNameField" property="firstName"/>
-                <textField id="lastNameField" property="lastName"/>
+                <textField id="codeField" property="code" caption="msg://code.caption"/>
+                <textField id="firstNameField" property="firstName" caption="msg://firstName.caption"/>
+                <textField id="lastNameField" property="lastName" caption="msg://lastName.caption"/>
             </column>
         </form>
         <groupBox id="subjectsBox" caption="msg://com.example.sga.entity/Professor.subjects">

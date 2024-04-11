@@ -33,9 +33,9 @@
                 <action id="remove" type="remove"/>
             </actions>
             <columns>
-                <column id="collegeNumber"/>
-                <column id="firstName"/>
-                <column id="lastName"/>
+                <column id="collegeNumber" caption="msg://collegeNumber.caption"/>
+                <column id="firstName" caption="msg://firstName.caption"/>
+                <column id="lastName" caption="msg://lastName.caption"/>
             </columns>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"
