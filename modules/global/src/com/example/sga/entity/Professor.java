@@ -1,8 +1,11 @@
 package com.example.sga.entity;
 
 import com.haulmont.cuba.core.entity.StandardEntity;
+import com.haulmont.cuba.core.entity.annotation.CaseConversion;
+import com.haulmont.cuba.core.entity.annotation.ConversionType;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -16,9 +19,11 @@ public class Professor extends StandardEntity {
     @Column(name = "code", unique = true)
     private String code;
 
+    @CaseConversion(type = ConversionType.UPPER)
     @Column(name = "last_name")
     private String lastName;
 
+    @CaseConversion(type = ConversionType.UPPER)
     @Column(name = "first_name")
     private String firstName;
 

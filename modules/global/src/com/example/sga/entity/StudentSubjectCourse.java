@@ -4,6 +4,8 @@ import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.cuba.core.entity.annotation.PublishEntityChangedEvents;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 
 @PublishEntityChangedEvents
 @Table(name = "SGA_STUDENT_SUBJECT_COURSE")
@@ -35,6 +37,8 @@ public class StudentSubjectCourse extends StandardEntity {
         this.subject = subject;
     }
 
+    @Min(value = 1)
+    @Max(value = 10)
     @Column(name = "course_grade")
     private Double courseGrade;
 
