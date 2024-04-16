@@ -11,6 +11,8 @@
         <property name="serverSelector" ref="cuba_ServerSelector"/>
         <property name="remoteServices">
             <map>
+                <entry key="sga_StudentSubjectCoursesService"
+                       value="com.example.sga.service.StudentSubjectCoursesService"/>
             </map>
         </property>
     </bean>

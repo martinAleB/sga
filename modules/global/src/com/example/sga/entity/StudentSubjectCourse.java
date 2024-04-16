@@ -37,8 +37,6 @@ public class StudentSubjectCourse extends StandardEntity {
         this.subject = subject;
     }
 
-    @Min(value = 1)
-    @Max(value = 10)
     @Column(name = "course_grade")
     private Double courseGrade;
 
@@ -81,5 +79,10 @@ public class StudentSubjectCourse extends StandardEntity {
 
     public void setCourseGrade(Double courseGrade) {
         this.courseGrade = courseGrade;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s %.2f %.2f %.2f", student.getCollegeNumber(), subject.getName(), courseGrade, examFinalGrade, grade);
     }
 }

@@ -22,17 +22,16 @@
                 <pickerField id="studentField" property="student" captionProperty="collegeNumber" caption="msg://studentCollegeNumber.caption"/>
                 <textField id="courseGradeField" property="courseGrade" caption="msg://courseGrade.caption">
                     <validators>
-                        <doubleMin value="1" inclusive="true" message="Course grade cannot be lower than $min"/>
-                        <doubleMax value="10" inclusive="true" message="Course grade cannot be greather than $max"/>
+                        <doubleMin message="msg://courseGradeField.doubleMin" inclusive="true" value="1"/>
+                        <doubleMax message="msg://courseGradeField.doubleMax" value="10" inclusive="true"/>
                     </validators>
                 </textField>
                 <textField id="examFinalGradeField" property="examFinalGrade" caption="msg://examFinalGrade.caption">
                     <validators>
-                        <doubleMin value="1" inclusive="true" message="Final exam grade cannot be lower than $min"/>
-                        <doubleMax value="10" inclusive="true" message="Final exam grade cannot be greather than $max"/>
+                        <doubleMin message="msg://examFinalGradeField.doubleMin" value="1" inclusive="true"/>
+                        <doubleMax message="msg://examFinalGradeField.doubleMax" inclusive="true" value="10"/>
                     </validators>
                 </textField>
-                <textField id="gradeField" property="grade" caption="msg://grade.caption"/>
                 <checkBox id="consolidatedField" property="consolidated" caption="msg://consolidated.caption"/>
             </column>
         </form>
