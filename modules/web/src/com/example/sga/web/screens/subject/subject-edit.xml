@@ -29,8 +29,8 @@
         <groupBox id="careersBox" caption="msg://com.example.sga.entity/Subject.careers">
             <table id="careersTable" dataContainer="careersDc" width="100%" height="200px">
                 <columns>
-                    <column id="code"/>
-                    <column id="name"/>
+                    <column id="code" caption="msg://code.caption"/>
+                    <column id="name" caption="msg://name.caption"/>
                 </columns>
             </table>
         </groupBox>
@@ -41,9 +41,9 @@
                     <action id="exclude" type="exclude"/>
                 </actions>
                 <columns>
-                    <column id="code"/>
-                    <column id="firstName"/>
-                    <column id="lastName"/>
+                    <column id="code" caption="msg://code.caption"/>
+                    <column id="firstName" caption="msg://firstName.caption"/>
+                    <column id="lastName" caption="msg://lastName.caption"/>
                 </columns>
                 <buttonsPanel>
                     <button action="professorsTable.add"/>
@@ -59,9 +59,9 @@
                     <action id="remove" type="remove"/>
                 </actions>
                 <columns>
-                    <column id="courseNote"/>
-                    <column id="note"/>
-                    <column id="examFinalNote"/>
+                    <column id="courseGrade" caption="msg://courseGrade.caption"/>
+                    <column id="examFinalGrade" caption="msg://examFinalGrade.caption"/>
+                    <column id="grade" caption="msg://grade.caption"/>
                 </columns>
                 <buttonsPanel>
                     <button action="studentSubjectCoursesTable.create"/>

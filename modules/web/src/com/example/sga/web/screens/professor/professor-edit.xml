@@ -26,8 +26,8 @@
         <groupBox id="subjectsBox" caption="msg://com.example.sga.entity/Professor.subjects">
             <table id="subjectsTable" dataContainer="subjectsDc" width="100%" height="200px">
                 <columns>
-                    <column id="code"/>
-                    <column id="name"/>
+                    <column id="code" caption="msg://code.caption"/>
+                    <column id="name" caption="msg://name.caption"/>
                 </columns>
             </table>
         </groupBox>
