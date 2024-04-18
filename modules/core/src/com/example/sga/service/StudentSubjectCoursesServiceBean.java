@@ -12,9 +12,6 @@ public class StudentSubjectCoursesServiceBean implements StudentSubjectCoursesSe
     @Inject
     protected GradesHelperBean gradesHelper;
 
-    @Inject
-    protected Persistence persistence;
-
     @Override
     public Double calculateGrade(StudentSubjectCourse course) {
         return gradesHelper.calculateGrade(course.getCourseGrade(), course.getExamFinalGrade());
