@@ -23,7 +23,7 @@
                 <textField id="lastNameField" property="lastName" caption="msg://lastName.caption"/>
             </column>
         </form>
-        <groupBox id="subjectsBox" caption="msg://com.example.sga.entity/Professor.subjects">
+        <groupBox id="subjectsBox" caption="msg://entityProfessor.subjects.caption">
             <table id="subjectsTable" dataContainer="subjectsDc" width="100%" height="200px">
                 <columns>
                     <column id="code" caption="msg://code.caption"/>

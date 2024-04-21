@@ -24,7 +24,7 @@
                 <textField id="nameField" property="name" caption="msg://name.caption"/>
             </column>
         </form>
-        <groupBox id="studentsBox" caption="msg://com.example.sga.entity/Career.students">
+        <groupBox id="studentsBox" caption="msg://entityCareer.students.caption">
             <table id="studentsTable" dataContainer="studentsDc" width="100%" height="200px">
                 <columns>
                     <column id="collegeNumber"/>
@@ -33,7 +33,7 @@
                 </columns>
             </table>
         </groupBox>
-        <groupBox id="subjectsBox" caption="msg://com.example.sga.entity/Career.subjects">
+        <groupBox id="subjectsBox" caption="entityCareer.subjects.caption">
             <table id="subjectsTable" dataContainer="subjectsDc" width="100%" height="200px">
                 <actions>
                     <action id="add" type="add"/>
